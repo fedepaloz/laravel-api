@@ -11,10 +11,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(  
+        
+        $classes= array(CategorySeeder::class, UserSeeder::class, PostSeeder::class);
+
+        foreach($classes as $class){
+            $this->call($class);
+        }
+        /* $this->call(  
             CategorySeeder::class,
             UserSeeder::class,
             PostSeeder::class
-        );
+        ); */
     }
 }
