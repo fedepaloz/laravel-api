@@ -1,7 +1,9 @@
 <template>
   <section id="posts-list">
     <h1>lista dei post</h1>
+    <div class="container d-flex flex-wrap">
     <PostCard v-for="post in posts" :key="post.id" :post="post"></PostCard>
+  </div>
   </section>
 </template>
  

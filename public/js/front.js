@@ -2129,7 +2129,7 @@ var render = function render() {
   }, [_c("img", {
     staticClass: "card-img-top",
     attrs: {
-      src: "",
+      src: _vm.post.image,
       alt: "Card image cap"
     }
   }), _vm._v(" "), _c("div", {
@@ -2166,14 +2166,16 @@ var render = function render() {
     attrs: {
       id: "posts-list"
     }
-  }, [_c("h1", [_vm._v("lista dei post")]), _vm._v(" "), _vm._l(_vm.posts, function (post) {
+  }, [_c("h1", [_vm._v("lista dei post")]), _vm._v(" "), _c("div", {
+    staticClass: "container d-flex flex-wrap"
+  }, _vm._l(_vm.posts, function (post) {
     return _c("PostCard", {
       key: post.id,
       attrs: {
         post: post
       }
     });
-  })], 2);
+  }), 1)]);
 };
 
 var staticRenderFns = [];
