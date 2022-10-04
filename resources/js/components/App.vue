@@ -1,22 +1,22 @@
 <template>
   <div class="content">
-    <Placeholder :title="title"></Placeholder>
-    <div class="title m-b-md"></div>
+    <TheHeader :title="title"></TheHeader>
+   <main>lista dei post</main>
   </div>
 </template>
 
  
  <script>
-import Placeholder from "./Placeholder.vue";
+import TheHeader from "./TheHeader.vue";
 export default {
   name: "App",
   components: {
-    Placeholder,
+    TheHeader,
   },
   data() {
     return {
-      title: "WIP",
-    };
+      title: "BOOLPRESS",
+    }; 
   },
 };
 </script>
