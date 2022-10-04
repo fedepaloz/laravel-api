@@ -2167,10 +2167,11 @@ var render = function render() {
       id: "posts-list"
     }
   }, [_c("h1", [_vm._v("lista dei post")]), _vm._v(" "), _c("div", {
-    staticClass: "container d-flex flex-wrap"
+    staticClass: "container-fluid d-flex flex-wrap justify-content-center"
   }, _vm._l(_vm.posts, function (post) {
     return _c("PostCard", {
       key: post.id,
+      staticClass: "m-1 col-3",
       attrs: {
         post: post
       }
