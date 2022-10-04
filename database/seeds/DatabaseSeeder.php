@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         foreach($classes as $class){
             $this->call($class);
         }
-        /* $this->call(  
+      /*   $this->call(  
             CategorySeeder::class,
             UserSeeder::class,
             PostSeeder::class
