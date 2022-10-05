@@ -12,9 +12,11 @@ Vue.use(VueRouter)
 
 const routes = new VueRouter({
     mode: 'history',
-    routes:[
-        {path: '/', component: HomePage},
-        {path: '/about', component: AboutPage},
-        {path: '/contacts', component: ContactsPage},
+    routes: [
+        { path: '/', component: HomePage },
+        { path: '/about', component: AboutPage },
+        { path: '/contacts', component: ContactsPage },
     ]
-})
+});
+
+export default routes;
