@@ -2,21 +2,23 @@
   <div class="content">
     <TheHeader :title="title"></TheHeader>
    <main>
-    <PostsList></PostsList>
+    <HomePage></HomePage>
    </main>
   </div>
 </template>
 
  
  <script>
+import HomePage from './pages/HomePage.vue';
 import TheHeader from "./TheHeader.vue";
-import PostsList from "./posts/PostsList.vue";
+
 
 export default {
   name: "App",
   components: {
     TheHeader,
-    PostsList
+    HomePage,
+   
 },
   data() {
     return {
