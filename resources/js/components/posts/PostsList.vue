@@ -2,8 +2,13 @@
   <section id="posts-list">
     <h1>lista dei post</h1>
     <div class="container-fluid d-flex flex-wrap justify-content-center">
-    <PostCard class="m-1 col-3" v-for="post in posts" :key="post.id" :post="post"></PostCard>
-  </div>
+      <PostCard
+        class="m-1 col-3"
+        v-for="post in posts"
+        :key="post.id"
+        :post="post"
+      ></PostCard>
+    </div>
   </section>
 </template>
  
