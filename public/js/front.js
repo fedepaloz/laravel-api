@@ -2320,7 +2320,7 @@ var render = function render() {
     attrs: {
       id: "post-detail-page"
     }
-  }, [_c("h1", [_vm._v("dettalgio post")]), _vm._v(" "), _c("PostCard", {
+  }, [_c("h1", [_vm._v("dettaglio post")]), _vm._v(" "), _c("PostCard", {
     attrs: {
       post: _vm.post
     }
